@@ -1,0 +1,269 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+html{
+    font-size: 18px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.container{
+    width: 60%;
+    max-width: 38rem;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 70%;
+    max-height: 30rem;
+    border-radius: 1rem;
+    background-color: white;
+    filter: drop-shadow(1rem 1rem 1rem #e3e3e3 );
+}
+
+.card{
+    width: 50%;
+    padding: 1rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.left{
+    border-radius: 1rem;
+    background-color: hsl(241, 81%, 54%);
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-results{
+    font-weight: 700;
+    color: hsl(241, 100%, 89%);
+    padding: 0;
+    margin: 0;
+}
+
+.circle-score{
+    width: 80%;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    margin: 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.circle-score>h1{
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    font-family: 'Hanken Grotesk', sans-serif;
+    justify-self: center;
+    align-self: center;
+}
+
+.circle-score>p{
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+.user-stats{
+    color: hsl(241, 100%, 89%);
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 1rem 1rem 0;
+    box-sizing: border-box;
+    padding: 1.5rem;
+}
+
+.right>h2{
+    font-weight: 700;
+    margin-bottom: 2rem;
+    margin-top: 0;
+}
+
+.results{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: .7rem;
+}
+
+.stat{
+    display: flex;
+    flex-direction: row;
+    border-radius: .5rem;
+    font-size: .9rem;
+    vertical-align: middle;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.react{
+    background-color: rgba(255, 87, 87, 0.1);
+}
+
+.react h3{
+    color: rgb(255, 87, 87);
+}
+
+.mem{
+    background-color: hsla(39, 100%, 56%, .1);
+}
+
+.mem h3{
+    color: hsl(39, 100%, 56%);
+}
+
+.verb{
+    background-color: hsla(166, 100%, 37%, .1);
+}
+
+.verb h3{
+    color: hsl(166, 100%, 37%);
+}
+
+.vis{
+    background-color: hsla(234, 85%, 45%, .1);
+}
+
+.vis h3{
+    color: hsl(234, 85%, 45%);
+}
+
+.catagory{
+    width: 70%;
+}
+
+.catagory img{
+    vertical-align: text-bottom;
+}
+
+.section-score{
+    text-align: right;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.points-earned{
+    font-weight: bold;
+}
+
+.continue{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 5rem;
+}
+
+.continue-link{
+    background-color: hsl(226, 29%, 17%);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 0;
+    border-radius: 50rem;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width:480px) {
+    html{
+        font-size: 20px;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    main{
+        display: block;
+        height: auto;
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+    }
+
+    .container{
+        flex-direction: column;
+        width: 100vw;
+        height: max-content;
+        margin: 0;
+        padding: 0;
+        max-height: none;
+    }
+
+    .card{
+        width: 100%;
+        height: auto;
+        margin: 0;
+        
+    }
+
+    .left{
+        border-radius: 0 0 1rem 1rem;
+        padding: 1.5rem;
+        margin: 0;
+    }
+
+    .circle-score{
+        width: 50%;
+    }
+
+    .continue-link{
+        margin: 2rem 0;
+    }
+
+    footer{
+        margin-top: 1rem;
+    }
+
+    
+}
+
+@media (min-width: 480px) {
+    .continue-link:hover{
+        background-color: hsl(241, 81%, 54%);
+        cursor: pointer;
+    }
+}
